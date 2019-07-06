@@ -1,0 +1,49 @@
+/* Serif */
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+/* Sans */
+@font-face {
+    font-family: 'Product Sans';
+    src: url('/scss/fonts/Product Sans Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+/** 
+ * Variables
+ */
+
+// Colors
+$color-base: #EDEDED;
+$color-primary: #CCCCCC;
+$color-secondary: hsla(45, 100%, 49%, 1.0);
+
+$color-white: darken($color-base, 0%);
+$color-gray: darken($color-base, 60%);
+$color-gray-border: darken($color-base, 33%);
+$color-gray-bg: darken($color-base, 21%);
+
+// Typographic
+$typographic-font-family: 'Crimson Text', serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$typographic-font-family-sans: 'Product Sans', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+$typographic-root-font-size: 100;
+$typographic-base-font-size: 20px;
+$typographic-small-font-size: 14px;
+
+$typographic-base-line-height: 1.725;
+
+$typographic-base-font-color: $color-base;
+$typographic-link-p-font-color: $color-secondary;
+$typographic-link-s-font-color: $color-primary;
+
+$typographic-leading: round(16 * ($typographic-root-font-size / 100) * $typographic-base-line-height);
+
+// Layout
+$layout-post-single-max-width: 945px;
+$layout-post-single-width: $layout-post-single-max-width - 265px;
+
+$layout-width: 1070px;
+$layout-breakpoint-sm: 685px;
+$layout-breakpoint-md: 960px;
+$layout-breakpoint-lg: 1100px;

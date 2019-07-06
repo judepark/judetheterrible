@@ -1,0 +1,139 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.post-single {
+    @include margin-bottom(2);
+    &__title {
+        font-family: $typographic-font-family-sans;
+        @include line-height(1.5);
+        @include margin-top(0);
+        @include margin-bottom(-.5);
+    }
+    &__body {
+        & figure {
+            @include margin-bottom(1);
+            & blockquote {
+                font-style: italic;
+                text-align: center;
+                margin-top: 0;
+                @include padding(1, 0);
+                & p {
+                    max-width: $layout-post-single-width;
+                    font-size: $typographic-base-font-size * 1.6817;
+                    margin-top: 0;
+                    @include margin-bottom(1);
+                    @include line-height(1.5);
+                    @include margin-top(1.45);
+                }
+            }
+        }
+        & a {
+            text-decoration: underline;
+        }
+        & .gatsby-highlight {
+            max-width: $layout-post-single-width;
+            margin-left: 15px;
+            margin-right: 15px;
+            @include margin-bottom(1);
+        }
+        & :not(div) {
+            max-width: $layout-post-single-width;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__footer {
+        max-width: $layout-post-single-width;
+        margin-left: 15px;
+        margin-right: 15px;
+        @include line-height(1);
+        @include margin-top(1);
+        @include margin-bottom(2);
+        &-text {
+            font-family: $typographic-font-family-sans;
+            color: lighten($color-gray, 18%);
+            font-size: $typographic-small-font-size;
+            & a {
+
+            }
+        }
+    }
+    &__date {
+        font-family: $typographic-font-family-sans;
+        font-size: $typographic-small-font-size;
+        color: $color-base;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    &__tags {
+        @include margin-bottom(0);
+        &-list {
+            list-style: none;
+            margin: 0 -5px;
+            padding: 0;
+            &-item {
+                display: inline-block;
+                margin: 5px -5px 5px 5px;
+                &-link {
+                    font-family: $typographic-font-family-sans;
+                    font-size: $typographic-small-font-size;
+                    color: $color-secondary;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    &:hover,
+                    &:focus {
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint-sm {
+    .post-single {
+        &__footer {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__body {
+            & .gatsby-highlight {
+                margin-left: auto;
+                margin-right: auto;
+                @include margin-top(1.45);
+            }
+        }
+    }
+}
+
+@include breakpoint-md {
+    .post-single {
+        &__inner {
+            padding: 0;
+        }
+        &__title {
+            font-family: $typographic-font-family-sans;
+            @include line-height(1.5);
+            @include margin-top(-0.1);
+            @include margin-bottom(-.5);
+        }
+        &__body {
+            font-size: $typographic-base-font-size;
+            @include line-height(1);
+            @include margin(0, 0, 1);
+            & p {
+                font-size: $typographic-base-font-size * 1.125;
+                @include line-height(1.125);
+                @include margin-bottom(1.125);
+                @include margin-top(1.45);
+            }
+        }
+        &__home-button {
+            position: fixed;
+            max-width: auto;
+            margin: 0;
+            top: 30px;
+            left: 30px;
+        }
+    }
+}
