@@ -7,7 +7,7 @@ module.exports = {
   siteMetadata: {
     url,
     siteUrl: url,
-    title: 'Personal Blog by Jude Park',
+    title: 'Jude the Terrible',
     subtitle:
       'Personal Blog by Jude Park',
     copyright: '© All rights reserved.',
