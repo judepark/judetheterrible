@@ -7,7 +7,7 @@
         @include margin-bottom(.5);
     }
     &__title {
-        font-family: $typographic-font-family-sans;
+        font-family: $typographic-font-family;
         @include line-height(1.5);
         @include margin-top(0);
         @include margin-bottom(-.5);
@@ -23,7 +23,7 @@
     &__description {
         font-size: $typographic-base-font-size;
         @include line-height(1);
-        @include margin-bottom(1.75);
+        @include margin-bottom(0.5);
     }
     &__meta {
         &-time {
@@ -31,10 +31,9 @@
             font-size: $typographic-small-font-size;
             color: $color-base;
             font-weight: 500;
-            text-transform: uppercase;
         }
         &-divider {
-            margin: 0 5px;
+            margin: 0 0px;
         }
         &-category {
             &-link {
@@ -42,7 +41,6 @@
                 font-size: $typographic-small-font-size;
                 color: $color-secondary;
                 font-weight: 500;
-                text-transform: uppercase;
                 &:hover,
                 &:focus {
                     color: $color-primary;

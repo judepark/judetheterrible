@@ -41,6 +41,8 @@ h1 {
 
 h2 {
     font-size: $typographic-base-font-size * 1.375;
+    font-weight: bold;
+    letter-spacing: 1px;
     @include line-height(1.5);
     @include margin-top(2);
     @include margin-bottom(.5);
@@ -127,10 +129,49 @@ p {
     @include margin-bottom(1);
 }
 
+p > a {
+    color: $typographic-link-s-font-color;
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $typographic-link-p-font-color;
+    }
+  }
+
+li > a {
+    color: $typographic-link-s-font-color;
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $typographic-link-p-font-color;
+    }
+  }
+
 blockquote {
-    padding: 0;
+    margin-left: 1.45rem;
+    margin-right: 1.45rem;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    margin-bottom: 1.45rem;
+    border-left-width: 3px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    font-size: calc( 19px + (24 - 19) * (100vw - 400px) / (1300 - 400) );
+    line-height: 1.35;
+    letter-spacing: -.009em;
     font-style: italic;
-    text-align: center;
+    border-left: 1.5px solid $typographic-base-font-color;
+    padding-left: 20px;
+    margin-left: 3px;
+    padding-bottom: 2px;
 }
 
 figure {
@@ -161,11 +202,19 @@ figcaption {
 
 .footnotes {
     color: #828282;
-    line-height: 5px;
+    line-height: 1.30;
+    letter-spacing: -.009em;
   }
 
   .footnote-backref {
     font-weight: bold;
+    color: $typographic-link-p-font-color;
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $typographic-link-s-font-color;
+    }
   }
 
   .footnote-ref {
@@ -184,6 +233,7 @@ figcaption {
     font: 65%/0.6em 'Product Sans', sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     letter-spacing: .03em;
+    line-height: 1.5em;
     text-align: center;
     font-weight: normal;
     margin-left: 0;
@@ -204,6 +254,8 @@ figcaption {
   small > a {
     color: #828282;
   }
+
+  
   
 @include breakpoint-sm {
     figure.float-left,

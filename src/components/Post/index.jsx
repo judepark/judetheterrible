@@ -15,13 +15,19 @@ class Post extends React.Component {
 
     return (
       <div className="post">
+        <h1 className="post__title">
+          <Link className="post__title-link" to={slug}>
+            {title}
+          </Link>
+        </h1>
+        <p className="post__description">{description}</p>
         <div className="post__meta">
           <time
             className="post__meta-time"
             dateTime={moment(date).format('MMMM D, YYYY')}
           >
             {moment(date).format('MMMM YYYY')}
-          </time>
+          </time>⠀·⠀
           <span className="post__meta-divider" />
           <span className="post__meta-category" key={categorySlug}>
             <Link to={categorySlug} className="post__meta-category-link">
@@ -29,12 +35,6 @@ class Post extends React.Component {
             </Link>
           </span>
         </div>
-        <h1 className="post__title">
-          <Link className="post__title-link" to={slug}>
-            {title}
-          </Link>
-        </h1>
-        <p className="post__description">{description}</p>
       </div>
     )
   }
