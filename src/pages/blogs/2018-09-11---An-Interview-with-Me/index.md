@@ -1,17 +1,14 @@
 ---
-title: A Sit-Down with Jude
+title: An Interview with Me
 date: "2018-09-11T23:46:37.121Z"
 layout: post
 draft: false
-path: "/posts/a-sit-down-with-jude"
+path: "/posts/an-interview-with-me"
 category: "Personal Writing"
 tags:
   - "About Me"
-description: "For anyone who wants a longer introduction (bless you):"
+description: "I'm practicing for the job interview I can't seem to get."
 ---
-
-
-For anyone who wants a longer introduction (bless you): 
 
 ##Who are you?
 I am an interaction designer in pursuit of fairness. I have 3 years of experience conducting UX research and design under my belt. I completed a masters (*UX Design* and *Information Systems Design*), and a bachelors (*Anthropology*, *Linguistics* and *History*). As a designer I create fair products and services that do not hinder the user by eliminating mismatches between the user and the system.

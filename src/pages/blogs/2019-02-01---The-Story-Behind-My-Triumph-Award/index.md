@@ -1,9 +1,9 @@
 ---
-title: Yeah I've Got Grit - The Story of My Triumph Award
+title: The Story Behind My Triumph Award
 date: "2019-02-01T23:46:37.121Z"
 layout: post
 draft: false
-path: "/posts/yeah-ive-got-grit"
+path: "/posts/the-story-behind-my-triumph-award"
 category: "Personal Writing"
 tags:
   - "About Me"

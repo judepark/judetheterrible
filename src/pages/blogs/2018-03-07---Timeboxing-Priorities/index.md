@@ -1,13 +1,13 @@
 ---
-title: MC + MSN = Technique for Timeboxing Priorities
+title: Timeboxing Priorities (MC + MSN)
 date: "2018-09-02T23:46:37.121Z"
 layout: post
 draft: false
-path: "/posts/mc-msn-techqniue-for-timeboxing-priorities"
+path: "/posts/timeboxing-priorities"
 category: "Techniques"
 tags:
   - "emergency"
-description: "Think Mariah Carey + MSN the 90's messenger."
+description: "MC + MSN -  Think Mariah Carey + MSN the 90's messenger."
 ---
 
 
